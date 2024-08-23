@@ -1,30 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../assets/lotusaccountinglogo.jpeg';
-import {Link, link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export default function Header (){
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
   return(<>
-    <header>
-        <div className="bg-blue-800 p-4  text-white text-sm sm:text-xl"> 📞 0436777889</div>
-    </header>
-      <div className="flex justify-between items-center max-w-6xl p-3">
-      <Link to="/"><img  src={logo} alt=""  width="150" height='150'/></Link>
-            <ul className="">
+    <nav className="bg-blue-900 p-5 text-white w-full ">
+        <p>📞  0436777889</p>
+    </nav>
+
+     <div className="flex justify-between p-5 items-center h-24 maxw-[1240px] mx-auto ">
+          <Link to="/"><img  src={logo} alt=""  width="170"/></Link>
+      
+            <ul className="hidden md:flex">
               <Link to="/">
-              <li className="hidden sm:inline text-red-500 uppercase hover:underline">home
+              <li className="p-4 text-red-500 uppercase hover:underline">home
               </li>
               </Link>
               <Link to="/about-us">
-              <li className="hidden sm:inline text-slate-700 uppercase hover:underline">About us</li>
+              <li className="p-4 text-slate-700 uppercase hover:underline">About us</li>
               </Link>
               <Link to="/contact-us">
-              <li className="hidden sm:inline text-slate-700 uppercase hover:underline">Contact us</li>
+              <li className="p-4 text-slate-700 uppercase hover:underline">Contact us</li>
               </Link>
               <Link to="/services">
-              <li className="hidden sm:inline text-slate-700 uppercase hover:underline">services</li>
+              <li className="p-4 text-slate-700 uppercase hover:underline">services</li>
               </Link>
-            </ul>
-            </div>
+              </ul>
+               <div onClick={handleNav} className="block md:hidden">
+                {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+                 
+               </div>
+               <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500': 'fixed left-[-100%]' }>
+
+                 <ul className="pt-36">
+                 <Link to="/">
+              <li className=" p-4 text-red-500 uppercase hover:underline">home
+              </li>
+              </Link>
+              <Link to="/about-us">
+              <li className=" p-4 text-slate-700 uppercase hover:underline">About us</li>
+              </Link>
+              <Link to="/contact-us">
+              <li className=" p-4 text-slate-700 uppercase hover:underline">Contact us</li>
+              </Link>
+              <Link to="/services">
+              <li className=" p-4 text-slate-700 uppercase hover:underline">services</li>
+              </Link>
+                 </ul>
+               </div>
+          </div>
     </>
   )
 }
