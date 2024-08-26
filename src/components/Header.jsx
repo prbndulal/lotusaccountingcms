@@ -14,7 +14,7 @@ export default function Header (){
         <p>📞  0436777889</p>
     </nav>
 
-     <div className="flex justify-between p-5 items-center h-24 maxw-[1240px] mx-auto ">
+     <div className="flex justify-between p-5 items-center h-24 max-w-[1240px] mx-auto mt-10 mb-10">
           <Link to="/"><img  src={logo} alt=""  width="170"/></Link>
       
             <ul className="hidden md:flex">
