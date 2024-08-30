@@ -1,0 +1,27 @@
+/* src/components/Carousel.css */
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .swiper-pagination-bullets {
+    bottom: 10px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #333;
+  }
+  .carousel-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Adjust slider height for small screens */
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 200px; /* Adjust height as needed */
+      object-fit: cover; /* Optional: crop or scale the image */
+    }
+  }

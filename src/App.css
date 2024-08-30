@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F9F9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #ffffff; /* Red */
+  padding: 20px;
   display: flex;
+  justify-content: center; /* Center nav items */
+}
+
+.hamburger {
+  display: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  position: fixed; /* Fixed positioning */
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  z-index: 1001; /* Ensure it is above other content */
 }
 
-.App-link {
-  color: #61dafb;
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: grey;
+  margin: 4px 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Keep all lines visible initially */
+.hamburger.active .line:nth-child(1) {
+  transform: rotate(45deg); /* Rotate to form a cross */
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: rotate(-45deg); /* Rotate to form a cross */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline; /* Light Green */
+}
+.nav-links li a.active {
+  color: #FF0000; /* Red */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show the hamburger on small screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    flex-direction: column;
+    background-color: #ffffff; /* Red */
+    width: 100%;
+    max-height: 0; /* Start with height 0 */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    max-height: 200px; /* Adjust based on the number of menu items */
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
   }
 }
