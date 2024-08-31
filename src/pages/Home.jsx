@@ -5,7 +5,11 @@ import AboutUs from './AboutUs';
 function Home() {
     return (
       <div>
+        <div className='swiper-root'>
+
         <Carousel />
+        </div>
+       
         <AboutUs/>
         <ServiceCards />
       </div>

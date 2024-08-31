@@ -1,5 +1,10 @@
+import ServiceCards from "../components/ServiceCards";
+
 function Services() {
-    return <div>Welcome to Services Page</div>;
+    return <div>
+
+      <ServiceCards />
+    </div>;
   }
   
   export default Services;

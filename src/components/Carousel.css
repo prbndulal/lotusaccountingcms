@@ -1,9 +1,10 @@
 /* src/components/Carousel.css */
 .swiper-slide img {
     width: 100%;
-    height: auto;
+    padding:10px;
     border-radius: 8px;
   }
+   
   
   .swiper-pagination-bullets {
     bottom: 10px;
@@ -13,15 +14,32 @@
   .swiper-button-prev {
     color: #333;
   }
-  .carousel-image {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+
+  .carousel-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f9f9f9;
   }
   
   /* Adjust slider height for small screens */
   @media (max-width: 768px) {
+
+    .carousel-slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25vh;
+      background-color: #f9f9f9;
+    }
+
     .carousel-image {
-      height: 200px; /* Adjust height as needed */
+      height: 30vh;
+       
       object-fit: cover; /* Optional: crop or scale the image */
     }
+
+ 
+ 
   }

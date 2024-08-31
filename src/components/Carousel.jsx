@@ -5,6 +5,7 @@ import 'swiper/css'; // Core Swiper styles
 import 'swiper/css/pagination'; // Pagination module styles
 import 'swiper/css/navigation'; // Navigation module styles
 import { Pagination, Navigation } from 'swiper/modules'; // Correct imports
+import './Carousel.css'; // Import custom Carousel styles
 
 const Carousel = () => {
   return (
