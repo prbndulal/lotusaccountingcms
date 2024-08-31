@@ -1,7 +1,9 @@
 
 import React from 'react';
+import about from '../assets/about.png';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+
 
 
 export default function Home() {
@@ -30,7 +32,7 @@ export default function Home() {
       url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
     },
   ];
-  return (
+  return(
     <div className="slide-container">
         <Slide>
          {slideImages.map((slideImage, index)=> (
@@ -41,6 +43,24 @@ export default function Home() {
             </div>
           ))} 
         </Slide>
+        <section className='flex items-center gap-4 mt-5 '>
+         <div className=''>
+            <img src={about} alt="" />
+         </div>
+         <div>
+            <div>
+               <h1 className='text-bold uppercase text-center'>About Us</h1>
+               <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the world in classical literature, discovered the undoubtable source</p>
+            <div>
+ 
+           </div>
+               <h2>"Learning is not attained by chance, it must be sought for with ardor and attended to with diligence"</h2>
+               <h3>----Abigail Adams</h3>
+            </div>
+         </div>
+         </section>
+  
       </div>
-  )
+    
+  );
 }
