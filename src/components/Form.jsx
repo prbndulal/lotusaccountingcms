@@ -75,7 +75,7 @@ export default function Contact() {
       <div className="form-group">
         <label htmlFor="message">Message</label>
         <textarea
-          id="message"
+          name="message"
           required   
 
         ></textarea>
