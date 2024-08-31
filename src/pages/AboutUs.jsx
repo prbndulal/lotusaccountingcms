@@ -1,16 +1,16 @@
 // src/components/AboutUs.jsx
 import React from 'react';
 import '../../src/AboutUs.css';
-import aboutUsImage from '../aboutus.webp'; // Adjust the path according to your project structure
+import aboutUsImage from '../about.png'; // Adjust the path according to your project structure
 
 const AboutUs = () => {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-6 md:flex md:items-center">
-        <div className="md:w-1/4 md-80">
+        <div className="md:w-1/2 md-80">
           <img src={aboutUsImage} alt="About Us" className="w-full h-auto object-cover" />
         </div>
-        <div className="md:w-2/3 md:pl-10 mt-8 md:mt-0">
+        <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
           <p className="text-gray-600 mb-6">
             At Lotus Accounting, we are committed to providing top-notch financial services to our clients.

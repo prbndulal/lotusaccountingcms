@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 
@@ -36,12 +37,19 @@ function App() {
         </ul>
       </nav> */}
       <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      <div className="flex flex-col min-h-screen">
+        <main className="flex-grow">
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
+        </main>
+        <Footer/>
+      </div>
+      
     </Router>
   );
 }
