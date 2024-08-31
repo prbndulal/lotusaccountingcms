@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Form.css";
 
 export default function Contact() {
   const [result, setResult] = useState("");
@@ -31,15 +32,60 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
+    <div className='contact-form"'>
+      {/* <form onSubmit={onSubmit}>
         <input type="text" name="name" required placeholder="Your Name" />
         <input type="email" name="email" required placeholder="Your Email" />
         <input type="number" name="phone" required placeholder="Your Phone" />
         <textarea name="message" required placeholder="Your Message"></textarea>
         <button type="submit">Submit Form</button>
-      </form>
+      </form> */}
+<div className="contact-form">
+<form onSubmit={onSubmit}>
+      <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          required 
+          placeholder="Your Name"
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="name">Email</label>
+        <input
+          type="text"
+          name="email"
+          required 
+          placeholder="Your Email"
+        />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="phone">Phone</label>
+        <input
+          type="text"
+          name="phone"
+          required 
+          placeholder="Your Phone"
+        />
+      </div>
+
+      {/* Add other form fields similarly */}
+      <div className="form-group">
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          required   
+
+        ></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+    
+      
       {result && <span>{result}</span>}
+      </div>
     </div>
   );
 }

@@ -11,7 +11,7 @@ const AboutUs = () => {
           <img src={aboutUsImage} alt="About Us" className="w-full h-auto object-cover" />
         </div>
         <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+          <h2 className="text-3xl  text-gray-800 mb-4">About Us</h2>
           <p className="text-gray-600 mb-6">
             At Lotus Accounting, we are committed to providing top-notch financial services to our clients.
             Our team of experts works tirelessly to ensure that your financial needs are met with precision
