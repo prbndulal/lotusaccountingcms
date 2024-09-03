@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../Header.css'; // Import your CSS file for the header
 import logo from '../logo.png'; 
@@ -6,10 +6,30 @@ import { PhoneIcon } from '@heroicons/react/24/solid';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const menuRef = useRef(null);
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+
+  // Close the menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Check if the click is outside the menu
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    // Add event listener to detect clicks outside
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      // Clean up the event listener on component unmount
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
 
   // Effect to add/remove 'menu-open' class on body
   useEffect(() => {
@@ -28,7 +48,9 @@ function Header() {
       <div className="top-bar">
         <div className="contact-info">
           <span className="flex items-center text-white text-lg">
-            <PhoneIcon className="w-6 h-6 text-2xl mr-2" /> 0412 305 150
+            <PhoneIcon className="w-6 h-6 text-2xl mr-2" /> <a href="tel:0412305150" className="hover:underline text-white">
+              0412 305 150
+            </a>
           </span>
         </div>
       </div>
