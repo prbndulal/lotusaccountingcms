@@ -1,4 +1,4 @@
-/* General styles */
+General styles
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 .hamburger {
-  display: none;
+  /* display: none; */
   flex-direction: column;
   cursor: pointer;
   position: fixed; /* Fixed positioning */
