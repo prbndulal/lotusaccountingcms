@@ -1,0 +1,20 @@
+/* src/styles/HomePage.css */
+
+.stats-section {
+    background-color: #ffffff; /* Light gray background */
+  }
+  
+  .stat-item {
+    background: #ffffff; /* White background for each stat item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .stat-item h3 {
+    color: #1d4ed8; /* Blue color for numbers */
+  }
+  
+  .stat-item p {
+    color: #4b5563; /* Dark gray color for text */
+  }
+  
