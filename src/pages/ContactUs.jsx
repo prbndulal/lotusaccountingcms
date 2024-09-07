@@ -11,7 +11,6 @@ function ContactUs() {
     
       </div>
       <ContactSection/>
-      { <Form /> }
        <MapComponent />
        
      

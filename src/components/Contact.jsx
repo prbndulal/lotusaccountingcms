@@ -2,6 +2,7 @@
 import React from 'react';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'; // Ensure you have the correct heroicons installed
 import './Contact.css'; // Import the updated CSS
+import Form from './Form'; // Import the updated Form component
 
 const ContactSection = () => {
   return (
@@ -41,36 +42,9 @@ const ContactSection = () => {
         </div>
       </div>
 
-      {/* <div className="contact-form">
-        <form method="post" className="contact-form-element" aria-label="Contact form">
-          <p>
-            <label>
-              Your Name (required)
-              <br />
-              <input type="text" name="your-name" className="form-control" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email (required)
-              <br />
-              <input type="email" name="your-email" className="form-control" required />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Message
-              <br />
-              <textarea name="your-message" rows="10" className="form-control"></textarea>
-            </label>
-          </p>
-          <p>
-            <button type="submit" className="submit-button">
-              Send
-            </button>
-          </p>
-        </form>
-      </div> */}
+      <div className="contact-form">
+        <Form/>
+      </div>
     </div>
   );
 };

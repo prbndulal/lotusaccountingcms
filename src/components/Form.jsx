@@ -40,7 +40,7 @@ export default function Contact() {
         <textarea name="message" required placeholder="Your Message"></textarea>
         <button type="submit">Submit Form</button>
       </form> */}
-<div className="contact-form">
+{/* <div className="contact-form"> */}
 <form onSubmit={onSubmit}>
       <div className="form-group">
         <label htmlFor="name">Name</label>
@@ -85,7 +85,7 @@ export default function Contact() {
     
       
       {result && <span>{result}</span>}
-      </div>
+      {/* </div> */}
     </div>
   );
 }

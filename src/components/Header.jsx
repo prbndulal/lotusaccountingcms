@@ -56,7 +56,10 @@ function Header() {
       </div>
       <div className="main-header">
         <div className="logo">
+          <Link to="/">
+            
           <img src={logo} alt="Lotus Accounting" />
+          </Link>
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           <div className="line"></div>
