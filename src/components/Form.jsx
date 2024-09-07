@@ -32,7 +32,7 @@ export default function Contact() {
   };
 
   return (
-    <div className='contact-form"'>
+    <div >
       {/* <form onSubmit={onSubmit}>
         <input type="text" name="name" required placeholder="Your Name" />
         <input type="email" name="email" required placeholder="Your Email" />
