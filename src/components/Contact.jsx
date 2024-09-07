@@ -41,7 +41,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div className="contact-form">
+      {/* <div className="contact-form">
         <form method="post" className="contact-form-element" aria-label="Contact form">
           <p>
             <label>
@@ -70,7 +70,7 @@ const ContactSection = () => {
             </button>
           </p>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

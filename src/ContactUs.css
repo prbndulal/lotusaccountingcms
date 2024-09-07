@@ -62,7 +62,6 @@ body {
   .contact-section .contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
   
   .contact-section .contact-info p {

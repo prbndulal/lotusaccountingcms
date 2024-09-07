@@ -3,7 +3,6 @@ import MapComponent from '../components/MapComponent';
 import Form from '../components/Form';
 import '../ContactUs.css'; // For custom styling
 import ContactSection from '../components/Contact';
-import Carousel from '../components/Carousel';
 
 function ContactUs() {
   return (
@@ -11,11 +10,11 @@ function ContactUs() {
       <div className='contact-section'>
     
       </div>
-      <Carousel/>
       <ContactSection/>
+      { <Form /> }
        <MapComponent />
        
-      {/* <Form /> */}
+     
      
     </div>
     
