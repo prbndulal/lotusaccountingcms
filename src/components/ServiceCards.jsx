@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFileInvoiceDollar, FaBriefcase, FaBook, FaMoneyBillWave, FaFileAlt, FaChartLine, FaBalanceScale, FaCashRegister, FaChartPie, FaHandHoldingUsd } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaBriefcase, FaBook, FaMoneyBillWave, FaFileAlt, FaChartLine, FaBalanceScale, FaCashRegister, FaHandHoldingUsd } from 'react-icons/fa';
 
 function ServiceCards() {
   const services = [
@@ -42,11 +42,6 @@ function ServiceCards() {
       title: 'Cash Flow Management',
       description: 'Efficiently manage your business cash flow and stay ahead of financial hurdles.',
       icon: <FaCashRegister />,
-    },
-    {
-      title: 'Budgeting and Forecasting',
-      description: 'Comprehensive budgeting and forecasting services for financial growth.',
-      icon: <FaChartPie />,
     },
     {
       title: 'Investment Advisory',

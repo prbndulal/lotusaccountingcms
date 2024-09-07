@@ -1,46 +1,70 @@
-/* src/components/Carousel.css */
+/* Swiper slide image styling */
 .swiper-slide img {
-    width: 100%;
-    padding:10px;
-    border-radius: 8px;
-  }
-   
-  
-  .swiper-pagination-bullets {
-    bottom: 10px;
-  }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #333;
+  width: 100%;
+  padding: 0; /* Removed the padding to avoid gaps around the image */
+  border-radius: 8px;
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullets {
+  bottom: 10px;
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+}
+
+/* Carousel slide container */
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+/* Carousel image */
+.carousel-image {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the slide */
+  object-fit: cover; /* Prevent distortion and crop the image if necessary */
+  border-radius: 8px; /* Maintain rounded corners */
+  transition: transform 0.3s ease;
+}
+.carousel-image:hover {
+  transform: scale(1.05); /* Slightly zoom in the image on hover */
+}
+
+/* Adjust slider height for small screens */
+@media (max-width: 768px) {
+  .carousel-slide {
+      height: 25vh; /* Reduce height for smaller screens */
   }
 
-  .carousel-slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background-color: #f9f9f9;
-  }
-  
-  /* Adjust slider height for small screens */
-  @media (max-width: 768px) {
-
-    .carousel-slide{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 25vh;
-      background-color: #f9f9f9;
-    }
-
-    .carousel-image {
+  .carousel-image {
       height: 30vh;
-       
       object-fit: cover; /* Optional: crop or scale the image */
-    }
- 
   }
-  
-  
-  
+}
+
+/* Swiper slide container hover effect */
+.carousel-slide {
+  position: relative;
+  overflow: hidden; /* Ensure the image stays within the slide during scale */
+}
+
+/* Add transition for the image */
+.carousel-image {
+  transition: transform 0.3s ease;
+}
+
+/* Apply hover effect to the parent container */
+.carousel-slide:hover .carousel-image {
+  transform: scale(1.05); /* Slightly zoom in the image on hover */
+}
+
+ 
+
