@@ -58,7 +58,11 @@ function Header() {
         <div className="logo">
           <Link to="/">
             
-          <img src={logo} alt="Lotus Accounting" />
+          <img
+            src={logo}
+            alt="Lotus Accounting"
+            className="w-24 md:w-32 lg:w-40 xl:w-48" // Tailwind responsive width classes
+          />
           </Link>
         </div>
         <div className="hamburger" onClick={toggleMenu}>
