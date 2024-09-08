@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../Header.css'; // Import your CSS file for the header
 import logo from '../logo.png';
@@ -21,28 +21,6 @@ function Header() {
       return newState;
     });
   };
-
-  // Close the menu when clicking outside of it
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      // Close menu if the click is outside of both the menu and the hamburger icon
-      if (
-        menuRef.current && 
-        !menuRef.current.contains(event.target) && 
-        hamburgerRef.current && 
-        !hamburgerRef.current.contains(event.target)
-      ) {
-        setIsMenuOpen(false);
-        document.body.classList.remove('menu-open');
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [menuRef, hamburgerRef]);
 
   return (
     <header>
@@ -75,7 +53,6 @@ function Header() {
             />
           </Link>
         </div>
-        
 
         <nav className="navbar">
           <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
@@ -85,8 +62,7 @@ function Header() {
             <li><Link to="/contactus" onClick={toggleMenu}>Contact</Link></li>
           </ul>
         </nav>
-        </div>
-     
+      </div>
     </header>
   );
 }
