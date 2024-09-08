@@ -5,23 +5,27 @@ import 'swiper/css/pagination'; // Pagination module styles
 import 'swiper/css/navigation'; // Navigation module styles
 import { Pagination, Navigation ,Autoplay} from 'swiper/modules'; // Correct imports
 import './Carousel.css'; // Import custom Carousel styles
+import image1 from '../images/image-1.jpg'
+import image2 from '../images/image-2.avif'
+import image3 from '../images/image-3.avif'
+import image4 from '../images/image-4.avif'
 
 const Carousel = () => {
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: image4,
       description: "Expert accounting solutions tailored to your business needs. Providing clarity and precision in financial management.",
     },
     {
-      image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: image3,
       description: "Comprehensive tax planning and compliance services. Maximize your tax savings with our expert guidance.",
     },
     {
-      image: "https://plus.unsplash.com/premium_photo-1661306425417-7eef17153be1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: image1,
       description: "Efficient payroll and bookkeeping services to streamline your operations. Focus on your business, leave the rest to us.",
     },
     {
-      image: "https://plus.unsplash.com/premium_photo-1661306425417-7eef17153be1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: image2,
       description: "Our trusted partner in navigating complex financial landscapes. Reliable, professional, and client-focused accounting services.",
     },
   ];
