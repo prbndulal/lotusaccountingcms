@@ -16,6 +16,7 @@ import InvestmentAdvisory from './pages/InvestmentAdvisory';
 import PayrollManagement from './pages/PayrollManagement';
 import GSTFiling from './pages/GSTFiling';
 import CashFlowManagement from './pages/CashFlowManagement';
+import ScrollToTop from './components/ScrollToTop'; 
 
 
 
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       {/* <div className="hamburger" onClick={toggleMenu}>
           <div className="line"></div>
           <div className="line"></div>
