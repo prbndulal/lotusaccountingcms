@@ -7,15 +7,16 @@ import { PhoneIcon } from '@heroicons/react/24/solid';
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const hamburgerRef = useRef(null); // Ref for the hamburger icon
 
   const toggleMenu = () => {
     setIsMenuOpen(prevState => {
       const newState = !prevState;
+
       if (newState) {
         document.body.classList.add('menu-open');
       } else {
         document.body.classList.remove('menu-open');
-        setIsMenuOpen(false);
       }
       return newState;
     });
@@ -24,17 +25,24 @@ function Header() {
   // Close the menu when clicking outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      // Close menu if the click is outside of both the menu and the hamburger icon
+      if (
+        menuRef.current && 
+        !menuRef.current.contains(event.target) && 
+        hamburgerRef.current && 
+        !hamburgerRef.current.contains(event.target)
+      ) {
         setIsMenuOpen(false);
         document.body.classList.remove('menu-open');
       }
     };
+
     document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [menuRef]);
+  }, [menuRef, hamburgerRef]);
 
   return (
     <header>
@@ -47,6 +55,15 @@ function Header() {
             </a>
           </span>
         </div>
+        <div 
+          ref={hamburgerRef} // Attach the ref to the hamburger icon
+          className={`hamburger ${isMenuOpen ? 'open' : ''}`} 
+          onClick={toggleMenu}
+        >
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
       </div>
       <div className="main-header">
         <div className="logo">
@@ -57,13 +74,6 @@ function Header() {
               className="w-24 md:w-32 lg:w-40 xl:w-48" // Tailwind responsive width classes
             />
           </Link>
-        </div>
-
-        {/* Hamburger / Cross Icon */}
-        <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
         </div>
 
         <nav className="navbar">
