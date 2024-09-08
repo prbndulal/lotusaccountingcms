@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -7,6 +7,16 @@ import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import TaxPreparation from './pages/TaxPreparation';
+import AccountingServices from './pages/AccountingServices';
+import Bookkeeping from './pages/Bookkeeping';
+import BusinessAdvisory from './pages/BusinessAdvisory';
+import FinancialPlanning from './pages/FinancialPlanning';
+import InvestmentAdvisory from './pages/InvestmentAdvisory';
+import PayrollManagement from './pages/PayrollManagement';
+import GSTFiling from './pages/GSTFiling';
+import CashFlowManagement from './pages/CashFlowManagement';
+
 
 
 
@@ -45,6 +55,16 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/taxpreparation" element={<TaxPreparation />} />
+        <Route path="/accountingservices" element={<AccountingServices />} />
+        <Route path="/bookkeeping" element={<Bookkeeping />} />
+        <Route path="/businessadvisory" element={<BusinessAdvisory />} />
+        <Route path="/financialplanning" element={<FinancialPlanning />} />
+        <Route path="/gstfiling" element={<GSTFiling />} />
+        <Route path="/investmentadvisory" element={<InvestmentAdvisory />} />
+        <Route path="/payrollmanagement" element={<PayrollManagement />} />
+        <Route path="/cashflowmanagement" element={<CashFlowManagement />} />
+
       </Routes>
         </main>
         <Footer/>
