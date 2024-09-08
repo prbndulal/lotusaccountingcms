@@ -30,14 +30,14 @@ body.menu-open .body-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   background-color: #ffffff;
   position: relative;
 }
 
 .logo img {
-  height: 15vh;
-  width: 20vw;
+  height: 10vh;
+  width: 10vw;
 }
 
 /* Navbar and navigation links */
@@ -119,7 +119,7 @@ body.menu-open .body-content {
 
   .nav-links {
     flex-direction: column;
-    position: fixed;
+    position: sticky;
     top: 50px;
     right: 0;
     width: 100%;
@@ -143,5 +143,8 @@ body.menu-open .body-content {
   .logo img {
     height: 10vh;
     width: 30vw;
+  }
+  .main-header{
+    flex-direction: column;
   }
 }

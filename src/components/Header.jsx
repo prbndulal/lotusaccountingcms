@@ -75,6 +75,7 @@ function Header() {
             />
           </Link>
         </div>
+        
 
         <nav className="navbar">
           <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
@@ -84,7 +85,8 @@ function Header() {
             <li><Link to="/contactus" onClick={toggleMenu}>Contact</Link></li>
           </ul>
         </nav>
-      </div>
+        </div>
+     
     </header>
   );
 }

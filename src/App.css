@@ -8,7 +8,7 @@ body {
 
 .navbar {
   background-color: #ffffff; /* Red */
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center; /* Center nav items */
 }
