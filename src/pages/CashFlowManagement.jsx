@@ -2,10 +2,22 @@
 import React from 'react';
 import { FaCashRegister } from 'react-icons/fa';
 import cashFlowManagementIllustration from '../images/accounting.png'; // Add a relevant illustration here
+import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
+
 
 const CashFlowManagement = () => {
-  return (
+    const navigate = useNavigate(); // Initialize the useNavigate hook
+    const goBack = () => {
+        navigate(-1); // Go back to the previous page
+    };
+
+    return (
     <div className="container mx-auto px-6 py-12">
+        {/* Back Button */}
+        <button
+            onClick={goBack}
+            className="mb-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+            Back </button>
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2">
           <img src={cashFlowManagementIllustration} alt="Cash Flow Management" className="w-full h-auto object-cover mb-6 md:mb-0" />
