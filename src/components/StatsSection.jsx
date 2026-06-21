@@ -9,19 +9,19 @@ const StatsSection = () => {
         <h2 className="text-3xl font-bold text-center mb-8">Our Achievements</h2>
         <div className="flex flex-wrap justify-around">
           <div className="stat-item text-center p-4 md:w-1/3">
-            <h3 className="text-4xl font-bold text-blue-600">
+            <h3 className="text-4xl font-bold text-[#2E7D32]">
               <CountUp end={10} duration={2} /> {/* Adjust end and duration as needed */}
             </h3>
             <p className="text-lg font-medium">Years of Experience</p>
           </div>
           <div className="stat-item text-center p-4 md:w-1/3">
-            <h3 className="text-4xl font-bold text-blue-600">
+            <h3 className="text-4xl font-bold text-[#2E7D32]">
               <CountUp end={4000} duration={2} separator="," /> {/* Adjust end and duration as needed */}
             </h3>
             <p className="text-lg font-medium">Clients Served</p>
           </div>
           <div className="stat-item text-center p-4 md:w-1/3">
-            <h3 className="text-4xl font-bold text-blue-600">
+            <h3 className="text-4xl font-bold text-[#2E7D32]">
               <CountUp end={3800} duration={2} /> {/* Adjust end and duration as needed */}
             </h3>
             <p className="text-lg font-medium">Happy Customers</p>

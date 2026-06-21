@@ -15,7 +15,7 @@ const BusinessAdvisory = () => {
         {/* Back Button */}
         <button
             onClick={goBack}
-            className="mb-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+            className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">
             Back
         </button>
       <div className="flex flex-col md:flex-row items-center">
@@ -24,7 +24,7 @@ const BusinessAdvisory = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaBriefcase className="text-blue-500 mr-2" />
+            <FaBriefcase className="text-[#C41E3A] mr-2" />
             Business Advisory
           </h2>
           <p className="text-gray-600 mb-6">

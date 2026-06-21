@@ -51,9 +51,12 @@ const Carousel = () => {
         <SwiperSlide key={index} className="carousel-slide">
           <div className="relative">
             <img className="carousel-image" src={slide.image} alt={`Slide ${index + 1}`} />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-black bg-opacity-50 text-white p-4 rounded-md text-center">
-                <p className="text-lg font-semibold">{slide.description}</p>
+            <div className="absolute inset-0 flex items-center justify-start bg-gradient-to-r from-black/70 to-transparent">
+              <div className="text-white p-8 md:p-16 max-w-2xl">
+                <h2 className="text-2xl md:text-4xl font-bold mb-4 tracking-wide leading-tight">
+                  Save Time. Work Smarter. Get It Done Remotely.
+                </h2>
+                <p className="text-lg md:text-xl font-medium leading-relaxed">{slide.description}</p>
               </div>
             </div>
           </div>

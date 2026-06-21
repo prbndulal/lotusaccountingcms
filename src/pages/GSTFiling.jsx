@@ -14,7 +14,7 @@ const GSTFiling = () => {
         {/* Back Button */}
         <button
             onClick={goBack}
-            className="mb-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+            className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">
             Back
         </button>
       <div className="flex flex-col md:flex-row items-center">
@@ -23,7 +23,7 @@ const GSTFiling = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaFileInvoiceDollar className="text-blue-500 mr-2" />
+            <FaFileInvoiceDollar className="text-[#C41E3A] mr-2" />
             GST Filing
           </h2>
           <p className="text-gray-600 mb-6">
@@ -36,6 +36,7 @@ const GSTFiling = () => {
             <li>Monthly and Quarterly GST Compliance</li>
             <li>GST Audit Support and Representation</li>
             <li>Consultation on GST Planning and Optimization</li>
+            <li>Prepare and Lodge Business Activity Statement</li>
           </ul>
           <p className="text-gray-600">
             Our goal is to simplify the GST filing process for you, ensuring accurate and timely submissions while maximizing compliance. Rely on our expertise to handle all your GST-related needs and keep your business on track with current regulations.

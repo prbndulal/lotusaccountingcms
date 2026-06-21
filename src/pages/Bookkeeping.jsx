@@ -14,7 +14,7 @@ const Bookkeeping = () => {
         {/* Back Button */}
         <button
             onClick={goBack}
-            className="mb-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+            className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">
             Back
 
         </button>
@@ -24,7 +24,7 @@ const Bookkeeping = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaBook className="text-blue-500 mr-2" />
+            <FaBook className="text-[#C41E3A] mr-2" />
             Bookkeeping
           </h2>
           <p className="text-gray-600 mb-6">
@@ -32,11 +32,11 @@ const Bookkeeping = () => {
           </p>
           <h3 className="text-xl text-gray-800 mb-4">Our Bookkeeping Services Include:</h3>
           <ul className="list-disc list-inside text-gray-600 mb-6">
-            <li>Daily Transaction Recording</li>
-            <li>Bank Reconciliation</li>
-            <li>Accounts Payable and Receivable Management</li>
-            <li>Financial Statement Preparation</li>
-            <li>Monthly and Year-End Closing</li>
+            <li>Management of all payments, expenses and purchases</li>
+            <li>Management of all receipts, income and sales</li>
+            <li>Recording, reviewing and reconciliation of bank transactions</li>
+            <li>Reporting of outstanding creditors and debtors</li>
+            <li>Generation financial annual or monthly reports</li>
           </ul>
           <p className="text-gray-600">
             We provide reliable and efficient bookkeeping solutions to help you maintain financial accuracy and transparency. Trust us to handle your bookkeeping needs and give you peace of mind with comprehensive and organized financial records.

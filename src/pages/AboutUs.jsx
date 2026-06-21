@@ -14,17 +14,14 @@ const AboutUs = () => {
           <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
             <h2 className="text-3xl text-gray-800 mb-4">About Us</h2>
             <p className="text-gray-600 mb-6">
-              At Lotus Accounting, our mission is to empower businesses and individuals with reliable, 
-              precise financial solutions. With a team of seasoned professionals, we bring a wealth of 
-              experience and dedication to every client we serve. Our commitment to excellence is reflected 
-              in our personalized approach, ensuring that each client's unique financial goals are not just 
-              met, but exceeded.
+              Lotus Accounting Services, a Public Practice firm founded in the early 21st century, has
+              experienced continuous growth for over a decade. Our primary focus is on delivering
+              exceptional accounting, taxation, and business solutions to our valued clients. Our reputation
+              has been built on the foundation of ethical accounting and business consulting, all offered at
+              competitive rates.
             </p>
-            <p className="text-gray-600 mb-6">
-              We understand the complexities of the financial landscape and are here to simplify them for you. 
-              Whether you're a small business owner, an entrepreneur, or an individual seeking expert financial 
-              advice, Lotus Accounting is your trusted partner. We are more than just accountants; we are 
-              strategists, advisors, and most importantly, your allies in achieving financial success.
+            <p className="text-gray-500 text-sm italic mb-6">
+              Liability limited by a scheme approved under Professional Standards Legislation.
             </p>
           </div>
         </div>
@@ -34,23 +31,24 @@ const AboutUs = () => {
         <div className="container mx-auto px-6 md:flex md:items-center">
           <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
             <h2 className="text-3xl text-gray-800 mb-4">Why Choose Lotus Accounting?</h2>
-            <p className="text-gray-600 mb-6">
-              ● Comprehensive Services: We offer a full spectrum of accounting, taxation, and business 
-              advisory services, providing you with a one-stop solution for all your financial needs.
+            <p className="text-gray-600 mb-4">
+              At Lotus Accounting Services, our aim is to secure your financial and tax affairs to allow you
+              to run your business operations with peace of mind.
             </p>
-            <p className="text-gray-600 mb-6">
-              ● Dedicated Client Management: Every client is assigned a dedicated manager who ensures 
-              your needs are met with precision and timeliness, giving you peace of mind.
-            </p>
-            <p className="text-gray-600 mb-6">
-              ● Flexible Pricing: Our flexible pricing plans allow you to bundle services into a fixed monthly 
-              payment, spreading your costs evenly throughout the year, while accessing our broad range of services.
-            </p>
-            <p className="text-gray-600 mb-6">
-              ● Professional Network: We collaborate with a network of trusted professionals, including legal, 
-              insurance, finance, and real estate advisors, providing you with comprehensive support beyond 
-              accounting.
-            </p>
+            <ul className="list-none space-y-4 text-gray-600 mb-6">
+              <li className="flex items-start">
+                <span className="text-[#C41E3A] font-bold mr-2">●</span>
+                <span>Our belief: a good tax agent is much more important than a good price!</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#C41E3A] font-bold mr-2">●</span>
+                <span>Our services are competitively priced, offering year-round, high quality taxation and accounting support for individuals and businesses. You will receive a comprehensive upfront and transparent quote with no hidden charges.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#C41E3A] font-bold mr-2">●</span>
+                <span>Flexible pricing</span>
+              </li>
+            </ul>
           </div>
           <div className="md:w-1/2 md-80">
             <img src={offerImage} alt="Why Choose Us" className="w-full h-auto object-cover" />

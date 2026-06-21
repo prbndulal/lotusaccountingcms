@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFileInvoiceDollar, FaBriefcase, FaBook, FaMoneyBillWave, FaFileAlt, FaChartLine, FaBalanceScale, FaCashRegister, FaHandHoldingUsd } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaBriefcase, FaBook, FaMoneyBillWave, FaFileAlt, FaChartLine, FaBalanceScale, FaHandHoldingUsd, FaUniversity } from 'react-icons/fa';
 
 function ServiceCards() {
   const services = [
@@ -47,16 +47,16 @@ function ServiceCards() {
       link: '/bookkeeping'
     },
     {
-      title: 'Cash Flow Management',
-      description: 'Efficiently manage your business cash flow and stay ahead of financial hurdles.',
-      icon: <FaCashRegister />,
-      link: '/cashflowmanagement'
-    },
-    {
-      title: 'Investment Advisory',
-      description: 'Expert investment advisory to help you make the right financial decisions.',
+      title: 'Investment Properties',
+      description: 'Expert guidance on tax-effective property investment and rental property management.',
       icon: <FaHandHoldingUsd />,
       link: '/investmentadvisory'
+    },
+    {
+      title: 'Self Managed Super Fund',
+      description: 'Simplify your SMSF accounting, compliance, and annual auditing requirements.',
+      icon: <FaUniversity />,
+      link: '/smsf'
     },
   ];
 
@@ -67,9 +67,9 @@ function ServiceCards() {
         {services.map((service, index) => (
           <Link to={service.link} key={index} className="no-underline">
             <div
-              className="bg-white shadow-lg p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer hover:bg-blue-50 flex flex-col items-center"
+              className="bg-white shadow-md hover:shadow-xl p-6 rounded-lg border-l-4 border-transparent hover:border-[#C41E3A] transform hover:scale-105 transition-all duration-300 cursor-pointer hover:bg-red-50 flex flex-col items-center"
             >
-              <div className="text-6xl text-blue-500 mb-4">
+              <div className="text-6xl text-[#C41E3A] mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl mb-2 text-center">{service.title}</h3>

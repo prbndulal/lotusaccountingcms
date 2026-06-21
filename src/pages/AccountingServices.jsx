@@ -13,7 +13,7 @@ const AccountingServices = () => {
     <div className="container mx-auto px-6 py-12">
         <button 
             onClick={goBack}
-            className="mb-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+            className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">
             Back
         </button>
       <div className="flex flex-col md:flex-row items-center">
@@ -22,7 +22,7 @@ const AccountingServices = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaBook className="text-blue-500 mr-2" />
+            <FaBook className="text-[#C41E3A] mr-2" />
             Accounting Services
           </h2>
           <p className="text-gray-600 mb-6">
@@ -35,6 +35,8 @@ const AccountingServices = () => {
             <li>Bank Reconciliations</li>
             <li>Financial Statement Preparation</li>
             <li>Budgeting and Forecasting</li>
+            <li>Send Payslip to Employee</li>
+            <li>Superannuation Paid as per ATO Rule</li>
           </ul>
           <p className="text-gray-600">
             With our accounting services, you can focus on running your business while we take care of the numbers.

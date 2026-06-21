@@ -18,7 +18,7 @@ const PayrollManagement = () => {
         {/* Back Button */}
       <button
         onClick={goBack}
-        className="mb-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300"
+        className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300"
       >
         Back
       </button>
@@ -29,22 +29,30 @@ const PayrollManagement = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaMoneyBillWave className="text-blue-500 mr-2" />
+            <FaMoneyBillWave className="text-[#C41E3A] mr-2" />
             Payroll Management
           </h2>
           <p className="text-gray-600 mb-6">
-            Our Payroll Management services ensure your employees are paid accurately and on time, every time. We handle all aspects of payroll processing, including tax calculations, direct deposits, and compliance with government regulations.
+            Lotus Accounting Services is pleased to take the pressure of payroll processing off your
+            back ensuring your business is more efficient and productive. Over the years we have
+            developed payroll procedures to provide your business with an excellent payroll service that
+            includes:
           </p>
-          <h3 className="text-xl text-gray-800 mb-4">Our Payroll Management Services Include:</h3>
+          <h3 className="text-xl text-gray-800 mb-4">Our Payroll Services Include:</h3>
           <ul className="list-disc list-inside text-gray-600 mb-6">
-            <li>Payroll Processing and Distribution</li>
-            <li>Tax Withholding and Reporting</li>
-            <li>Employee Benefits Administration</li>
-            <li>Compliance with Labor Laws</li>
-            <li>Year-End Tax Forms Preparation</li>
+            <li>Paying all staff whether full time, part time, casual or contractors</li>
+            <li>Calculating PAYG withholding</li>
+            <li>Calculating Superannuation entitlements</li>
+            <li>Calculating leave entitlements</li>
+            <li>Reporting and paying superannuation by due dates</li>
+            <li>Advice on employee's minimum wage rate as per award agreements</li>
+            <li>Advice on fair work matters</li>
+            <li>Providing you with extensive payroll reports to help you better manage your finances</li>
+            <li>Minimising your risk of being employer obligations audits or receiving an enquiry from Fair Work</li>
+            <li>Providing your staff with up-to-date payment slips issuing end of year payment summaries</li>
           </ul>
           <p className="text-gray-600">
-            Let us take care of your payroll so you can focus on growing your business.
+            Let us take the pressure of payroll processing off your back so you can focus on growing your business.
           </p>
         </div>
       </div>

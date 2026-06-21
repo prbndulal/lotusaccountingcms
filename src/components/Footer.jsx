@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3476d2] text-white py-8">
+    <footer className="bg-[#1E1E1E] text-white py-8 border-t-2 border-[#C41E3A]">
     <div className="container mx-auto flex flex-col items-center">
       <div className="flex flex-col md:flex-row justify-between items-center w-full">
         {/* Left Section */}
@@ -37,7 +37,11 @@ const Footer = () => {
   
       {/* Copyright */}
       <div className="mt-6 text-sm">
-        © 2024 All Rights Reserved
+        © {new Date().getFullYear()} All Rights Reserved
+      </div>
+
+      <div className="mt-2 text-xs text-gray-400 text-center max-w-2xl">
+        Liability limited by a scheme approved under Professional Standards Legislation.
       </div>
   
       {/* Attribution */}

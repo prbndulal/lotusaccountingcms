@@ -15,7 +15,7 @@ import FinancialPlanning from './pages/FinancialPlanning';
 import InvestmentAdvisory from './pages/InvestmentAdvisory';
 import PayrollManagement from './pages/PayrollManagement';
 import GSTFiling from './pages/GSTFiling';
-import CashFlowManagement from './pages/CashFlowManagement';
+import SMSF from './pages/SMSF';
 import ScrollToTop from './components/ScrollToTop'; 
 
 
@@ -65,7 +65,7 @@ function App() {
         <Route path="/gstfiling" element={<GSTFiling />} />
         <Route path="/investmentadvisory" element={<InvestmentAdvisory />} />
         <Route path="/payrollmanagement" element={<PayrollManagement />} />
-        <Route path="/cashflowmanagement" element={<CashFlowManagement />} />
+        <Route path="/smsf" element={<SMSF />} />
 
       </Routes>
         </main>

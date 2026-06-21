@@ -28,8 +28,8 @@ function Header() {
         <div className="contact-info">
           <span className="flex items-center text-white text-lg">
             <PhoneIcon className="w-6 h-6 text-2xl mr-2" />
-            <a href="tel:0412305150" className="hover:underline text-white">
-              0412 305 150
+            <a href="tel:0430215596" className="hover:underline text-white">
+              0430 215 596
             </a>
           </span>
         </div>

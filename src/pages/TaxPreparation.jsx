@@ -15,7 +15,7 @@ const TaxPreparation = () => {
       {/* Back Button */}
       <button
         onClick={goBack}
-        className="mb-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300"
+        className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300"
       >
         Back
       </button>
@@ -26,19 +26,23 @@ const TaxPreparation = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaFileInvoiceDollar className="text-blue-500 mr-2" />
+            <FaFileInvoiceDollar className="text-[#C41E3A] mr-2" />
             Tax Preparation
           </h2>
           <p className="text-gray-600 mb-6">
-            At Lotus Accounting, we provide expert tax preparation services that ensure compliance with the latest tax regulations and maximize your returns. Our team of certified professionals takes the stress out of tax season, handling everything from individual tax returns to complex corporate filings.
+            At Lotus Accounting, we provide expert tax preparation services that ensure compliance with the latest tax regulations and maximum legitimate refund. Our team of certified professionals takes the stress out of tax season, handling everything from individual tax returns to complex corporate filings.
           </p>
           <h3 className="text-xl text-gray-800 mb-4">Our Tax Preparation Services Include:</h3>
           <ul className="list-disc list-inside text-gray-600 mb-6">
-            <li>Personal and Business Tax Returns</li>
-            <li>Strategic Tax Planning</li>
-            <li>Audit Support and Representation</li>
-            <li>Tax Compliance and Consulting</li>
-            <li>Year-Round Tax Assistance</li>
+            <li>Individual Tax Return</li>
+            <li>Sole Trader Tax Return</li>
+            <li>Company Tax Return</li>
+            <li>Partnership Tax Return</li>
+            <li>Trust Tax Return</li>
+            <li>Self-Manage Superfund Tax Return</li>
+            <li>Payroll Tax</li>
+            <li>Instalment Activity</li>
+            <li>Capital Gain Tax</li>
           </ul>
           <p className="text-gray-600">
             We stay updated with the latest tax laws to provide you with accurate, efficient, and beneficial tax services. Trust us to navigate the complexities of tax preparation and help you achieve your financial goals.
