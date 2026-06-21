@@ -9,6 +9,10 @@ import {
   FaHospital, FaGraduationCap, FaChild, FaLaptopCode,
   FaUtensils, FaPlane, FaCut, FaDumbbell, FaTree
 } from 'react-icons/fa';
+import tpbLogo from '../images/taxpractitioner.png';
+import ipaLogo from '../images/ipa.png';
+import xeroLogo from '../images/xero.png';
+import asicLogo from '../images/asic.png';
 
 const industries = [
   { name: 'Startups', icon: <FaRocket /> },
@@ -77,6 +81,29 @@ function Home() {
       </section>
 
       <StatsSection />
+
+      <section className="py-16 bg-[#F5F5F5]">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+            Our Accreditations & Partners
+          </h2>
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+            <div className="flex flex-col items-center">
+              <img src={tpbLogo} alt="Tax Practitioners Board - Registered Tax Agent 25996964" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+            </div>
+            <div className="flex flex-col items-center">
+              <img src={ipaLogo} alt="Institute of Public Accountants" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+            </div>
+            <div className="flex flex-col items-center">
+              <img src={xeroLogo} alt="Xero Certified Partner" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+            </div>
+            <div className="flex flex-col items-center">
+              <img src={asicLogo} alt="ASIC Registered Agent" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <MapComponent />
     </div>
   );

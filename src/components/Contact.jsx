@@ -25,6 +25,7 @@ const ContactSection = () => {
             <PhoneIcon className="w-6 h-6 text-gray-600" />
             <div>
               <h3 className="text-lg font-semibold">Phone</h3>
+              <p className="text-gray-700">+61 412 305 150</p>
               <p className="text-gray-700">+61 430 215 596</p>
             </div>
           </div>
