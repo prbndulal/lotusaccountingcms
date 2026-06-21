@@ -1,70 +1,260 @@
-/* Swiper slide image styling */
-.swiper-slide img {
+/* ── Hero Swiper ──────────────────────────────────── */
+.hero-swiper {
+  height: 90vh;
   width: 100%;
-  padding: 0; /* Removed the padding to avoid gaps around the image */
-  border-radius: 8px;
 }
 
-/* Pagination bullets */
-.swiper-pagination-bullets {
-  bottom: 10px;
-}
-
-/* Navigation buttons */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #ffffff;
-}
-
-/* Carousel slide container */
-.carousel-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
+.hero-slide {
   position: relative;
-  overflow: hidden; /* Ensure the image stays within the slide during scale */
-  border-radius: 8px;
-}
-
-.swiper{
-  height: 80vh
-}
-/* Carousel image */
-.carousel-image {
   width: 100%;
-  height: 100%; /* Ensure the image fills the slide */
-  object-fit: cover; /* Prevent distortion and crop the image if necessary */
-  border-radius: 8px; /* Maintain rounded corners */
-  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  height: 90vh;
+  overflow: hidden;
 }
 
-.carousel-image:hover {
-  transform: scale(1.05); /* Slightly zoom in the image on hover */
+/* ── Background image with Ken Burns ─────────────── */
+.hero-slide-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
-/* Adjust slider height for small screens */
-@media (max-width: 768px) {
-  .carousel-slide {
-    height: 40vh; /* Adjusted height for smaller screens */
-  }
-      .swiper{
-        height: 36vh
-      }
-
-  .carousel-image {
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-/* Swiper slide container hover effect */
-.carousel-slide:hover .carousel-image {
-  transform: scale(1.05); /* Slightly zoom in the image on hover */
-}
-
-/* Additional styling (if needed) */
-.swiper-container {
+.hero-slide-bg img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  animation: kenBurns 8s ease-in-out infinite alternate;
 }
 
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+/* ── Gradient overlay ────────────────────────────── */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.45) 50%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
+/* ── Content ─────────────────────────────────────── */
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 4rem;
+  max-width: 800px;
+}
+
+.hero-badge {
+  display: inline-block;
+  width: fit-content;
+  background: #C41E3A;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0 0 2rem;
+  max-width: 560px;
+}
+
+/* ── CTA Buttons ─────────────────────────────────── */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-btn-primary {
+  background: #C41E3A;
+  color: #fff;
+  border: 2px solid #C41E3A;
+}
+
+.hero-btn-primary:hover {
+  background: #9B1B30;
+  border-color: #9B1B30;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.35);
+}
+
+.hero-btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.hero-btn-outline:hover {
+  background: #fff;
+  color: #1E1E1E;
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ── Navigation arrows ───────────────────────────── */
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-button-next:hover,
+.hero-swiper .swiper-button-prev:hover {
+  background: #C41E3A;
+}
+
+.hero-swiper .swiper-button-next::after,
+.hero-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ── Pagination bullets ──────────────────────────── */
+.hero-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: #C41E3A;
+  width: 28px;
+  border-radius: 5px;
+}
+
+/* ── Slide transition animation ──────────────────── */
+.hero-swiper .swiper-slide-active .hero-badge {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.hero-swiper .swiper-slide-active .hero-heading {
+  animation: fadeInUp 0.6s 0.15s ease forwards;
+  opacity: 0;
+}
+
+.hero-swiper .swiper-slide-active .hero-description {
+  animation: fadeInUp 0.6s 0.3s ease forwards;
+  opacity: 0;
+}
+
+.hero-swiper .swiper-slide-active .hero-actions {
+  animation: fadeInUp 0.6s 0.45s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero-swiper,
+  .hero-slide {
+    height: 70vh;
+  }
+
+  .hero-content {
+    padding: 1.5rem 1.5rem;
+    justify-content: flex-end;
+    padding-bottom: 4rem;
+  }
+
+  .hero-heading {
+    font-size: 1.75rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .hero-btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-swiper .swiper-button-next,
+  .hero-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-swiper,
+  .hero-slide {
+    height: 60vh;
+  }
+
+  .hero-heading {
+    font-size: 1.4rem;
+  }
+
+  .hero-badge {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}
