@@ -26,20 +26,20 @@ function Header() {
     <header className="sticky top-0 z-[999]">
       <div className="top-bar">
         <div className="contact-info">
-          <span className="flex items-center text-white text-sm gap-4 flex-wrap">
+          <span className="flex items-center text-white text-xs sm:text-sm gap-2 sm:gap-4 flex-wrap">
             <span className="flex items-center">
-              <PhoneIcon className="w-4 h-4 mr-1" />
+              <PhoneIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
               <a href="tel:0412305150" className="hover:underline text-white">
                 0412 305 150
               </a>
             </span>
-            <span className="text-white/40 hidden sm:inline">|</span>
-            <a href="tel:0430215596" className="hover:underline text-white hidden sm:inline">
+            <span className="text-white/40">|</span>
+            <a href="tel:0430215596" className="hover:underline text-white">
               0430 215 596
             </a>
-            <span className="text-white/40 hidden md:inline">|</span>
-            <span className="items-center hidden md:flex">
-              <EnvelopeIcon className="w-4 h-4 mr-1" />
+            <span className="text-white/40">|</span>
+            <span className="flex items-center">
+              <EnvelopeIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
               <a href="mailto:info@lotusaccounting.com.au" className="hover:underline text-white">
                 info@lotusaccounting.com.au
               </a>
