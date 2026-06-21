@@ -4,41 +4,76 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#1E1E1E" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Lotus Accounting</title>
+    <meta name="description" content="Lotus Accounting Services — expert accounting, taxation, bookkeeping, payroll, and SMSF solutions for individuals and businesses across Australia." />
+    <meta name="keywords" content="accounting services, tax preparation, bookkeeping, payroll management, GST filing, SMSF, investment properties, tax agent, Griffin QLD, Australia, BAS lodgement, tax return, Lotus Accounting" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lotus Accounting Services" />
+    <meta property="og:title" content="Lotus Accounting Services | Accounting, Tax & Business Solutions" />
+    <meta property="og:description" content="Expert accounting, taxation, bookkeeping, payroll, and SMSF solutions for individuals and businesses in Australia. Trusted since 2019." />
+    <meta property="og:url" content="https://lotusaccounting.com.au" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Lotus Accounting Services | Accounting, Tax & Business Solutions" />
+    <meta name="twitter:description" content="Expert accounting, taxation, bookkeeping, payroll, and SMSF solutions for individuals and businesses in Australia." />
+
+    <link rel="canonical" href="https://lotusaccounting.com.au" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Lotus Accounting Services | Accounting, Tax & Business Solutions</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "Lotus Accounting Services",
+      "url": "https://lotusaccounting.com.au",
+      "telephone": ["+61412305150", "+61430215596"],
+      "email": "info@lotusaccounting.com.au",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "39 Venture Dr",
+        "addressLocality": "Griffin",
+        "addressRegion": "QLD",
+        "postalCode": "4503",
+        "addressCountry": "AU"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "priceRange": "$$",
+      "description": "Lotus Accounting Services is a Public Practice firm delivering exceptional accounting, taxation, and business solutions for individuals and businesses across Australia.",
+      "foundingDate": "2019",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Accounting Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Preparation"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Accounting Services"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bookkeeping"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Payroll Management"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Filing"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Self Managed Super Fund"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Investment Properties"}}
+        ]
+      }
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div  id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="root"></div>
   </body>
-  
 </html>
-

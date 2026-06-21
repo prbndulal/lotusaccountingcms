@@ -1,6 +1,7 @@
 // src/pages/InvestmentAdvisory.jsx
 import React from 'react';
-import { FaHandHoldingUsd } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { FaBuilding } from 'react-icons/fa';
 import investmentAdvisoryIllustration from '../images/investment.png';
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 
@@ -13,7 +14,11 @@ const InvestmentAdvisory = () => {
 
   return (
     <div className="container mx-auto px-6 py-12">
-        {/* Back Button */}
+        <Helmet>
+          <title>Investment Properties | Lotus Accounting Services</title>
+          <meta name="description" content="Tax-effective property investment strategies, negative gearing advice, and rental property record-keeping." />
+          <link rel="canonical" href="https://lotusaccounting.com.au/investmentadvisory" />
+        </Helmet>
         <button
             onClick={goBack}
             className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300"  
@@ -26,7 +31,7 @@ const InvestmentAdvisory = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaHandHoldingUsd className="text-[#C41E3A] mr-2" />
+            <FaBuilding className="text-[#C41E3A] mr-2" />
             Investment Properties
           </h2>
           <p className="text-gray-600 mb-6">

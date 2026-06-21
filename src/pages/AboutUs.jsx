@@ -1,16 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../../src/AboutUs.css';
 import aboutUsImage from '../aboutus.png';
 import offerImage from '../offer.png';
 
 const AboutUs = () => {
-  return ( 
+  return (
     <>
+      <Helmet>
+        <title>About Us | Lotus Accounting Services</title>
+        <meta name="description" content="Lotus Accounting Services is a Public Practice firm delivering exceptional accounting and taxation solutions with ethical standards and competitive rates." />
+        <link rel="canonical" href="https://lotusaccounting.com.au/aboutus" />
+      </Helmet>
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6 md:flex md:items-center">
           <div className="md:w-1/2 md-80">
-            <img src={aboutUsImage} alt="About Us" className="w-full h-auto object-cover" />
+            <img src={aboutUsImage} alt="About Us" className="w-full h-auto object-cover mix-blend-multiply" />
           </div>
           <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
             <h2 className="text-3xl text-gray-800 mb-4">About Us</h2>

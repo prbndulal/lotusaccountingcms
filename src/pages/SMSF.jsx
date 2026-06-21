@@ -1,7 +1,8 @@
 import React from 'react';
-import { FaUniversity } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { FaPiggyBank } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import smsfIllustration from '../images/business.png';
+import smsfIllustration from '../images/investment.png';
 
 const SMSF = () => {
   const navigate = useNavigate();
@@ -11,6 +12,11 @@ const SMSF = () => {
 
   return (
     <div className="container mx-auto px-6 py-12">
+      <Helmet>
+        <title>Self Managed Super Fund | Lotus Accounting Services</title>
+        <meta name="description" content="SMSF setup, annual auditing, borrowing structures, and compliance. Take control of your superannuation." />
+        <link rel="canonical" href="https://lotusaccounting.com.au/smsf" />
+      </Helmet>
       <button
         onClick={goBack}
         className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300"
@@ -24,7 +30,7 @@ const SMSF = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaUniversity className="text-[#C41E3A] mr-2" />
+            <FaPiggyBank className="text-[#C41E3A] mr-2" />
             Self Managed Super Fund (SMSF)
           </h2>
           <h3 className="text-xl text-gray-800 font-semibold mb-4">Simplify Your SMSF Accounting & Compliance</h3>

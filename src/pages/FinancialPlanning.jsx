@@ -1,5 +1,6 @@
 // src/pages/FinancialPlanning.jsx
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { FaChartLine } from 'react-icons/fa';
 import financialPlanningIllustration from '../images/business.png'; // Add a relevant illustration here
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
@@ -13,7 +14,11 @@ const FinancialPlanning = () => {
 
     return (
     <div className="container mx-auto px-6 py-12">
-        {/* Back Button */}
+        <Helmet>
+          <title>Financial Planning | Lotus Accounting Services</title>
+          <meta name="description" content="Personal financial planning, retirement planning, investment strategy, and estate planning services." />
+          <link rel="canonical" href="https://lotusaccounting.com.au/financialplanning" />
+        </Helmet>
         <button
             onClick={goBack}
             className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300" >

@@ -1,5 +1,6 @@
 // src/pages/BusinessAdvisory.jsx
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { FaBriefcase } from 'react-icons/fa';
 import businessAdvisoryIllustration from '../images/business.png';
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
@@ -12,7 +13,11 @@ const BusinessAdvisory = () => {
     };
   return (
     <div className="container mx-auto px-6 py-12">
-        {/* Back Button */}
+        <Helmet>
+          <title>Business Advisory | Lotus Accounting Services</title>
+          <meta name="description" content="Strategic financial planning, risk management, and business process improvement for growing businesses." />
+          <link rel="canonical" href="https://lotusaccounting.com.au/businessadvisory" />
+        </Helmet>
         <button
             onClick={goBack}
             className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">

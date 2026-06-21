@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFileInvoiceDollar, FaBriefcase, FaBook, FaMoneyBillWave, FaFileAlt, FaChartLine, FaBalanceScale, FaHandHoldingUsd, FaUniversity } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaBriefcase, FaCalculator, FaMoneyBillWave, FaFileInvoice, FaChartLine, FaBookOpen, FaBuilding, FaPiggyBank } from 'react-icons/fa';
 import taxImg from '../images/taxillustration.png';
 import accountingImg from '../images/accounting.png';
 import bookkeepingImg from '../images/bookkeeping.png';
@@ -27,7 +27,7 @@ function ServiceCards() {
     {
       title: 'Accounting Services',
       description: 'Comprehensive accounting services to keep your finances in check.',
-      icon: <FaBook />,
+      icon: <FaCalculator />,
       image: accountingImg,
       link: '/accountingservices'
     },
@@ -41,7 +41,7 @@ function ServiceCards() {
     {
       title: 'GST Filing',
       description: 'Accurate GST filing services to keep your business compliant with tax regulations.',
-      icon: <FaFileAlt />,
+      icon: <FaFileInvoice />,
       image: taxImg,
       link: '/gstfiling'
     },
@@ -55,22 +55,22 @@ function ServiceCards() {
     {
       title: 'Bookkeeping',
       description: 'Ensure accurate financial records and seamless bookkeeping for your business.',
-      icon: <FaBalanceScale />,
+      icon: <FaBookOpen />,
       image: bookkeepingImg,
       link: '/bookkeeping'
     },
     {
       title: 'Investment Properties',
       description: 'Expert guidance on tax-effective property investment and rental property management.',
-      icon: <FaHandHoldingUsd />,
+      icon: <FaBuilding />,
       image: investmentImg,
       link: '/investmentadvisory'
     },
     {
       title: 'Self Managed Super Fund',
       description: 'Simplify your SMSF accounting, compliance, and annual auditing requirements.',
-      icon: <FaUniversity />,
-      image: businessImg,
+      icon: <FaPiggyBank />,
+      image: investmentImg,
       link: '/smsf'
     },
   ];
@@ -83,11 +83,11 @@ function ServiceCards() {
         {services.map((service, index) => (
           <Link to={service.link} key={index} className="no-underline group">
             <div className="bg-white shadow-md hover:shadow-xl rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group-hover:-translate-y-1">
-              <div className="h-44 overflow-hidden bg-gray-50">
+              <div className="h-44 overflow-hidden bg-white">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300 mix-blend-multiply"
                 />
               </div>
               <div className="p-6">

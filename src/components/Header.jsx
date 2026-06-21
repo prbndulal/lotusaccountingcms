@@ -77,7 +77,7 @@ function Header() {
           </Link>
         </div>
 
-        <nav className="navbar">
+        <nav className="navbar" aria-label="Main navigation">
           <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
             <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
             <li><Link to="/aboutus" onClick={toggleMenu}>About</Link></li>

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Carousel from '../components/Carousel';
 import ServiceCards from '../components/ServiceCards';
 import AboutUs from './AboutUs';
@@ -35,6 +36,11 @@ const industries = [
 function Home() {
   return (
     <div>
+      <Helmet>
+        <title>Lotus Accounting Services | Accounting, Tax & Business Solutions</title>
+        <meta name="description" content="Expert accounting, taxation, bookkeeping, payroll, and SMSF solutions for individuals and businesses in Australia. Trusted since 2019." />
+        <link rel="canonical" href="https://lotusaccounting.com.au/" />
+      </Helmet>
       <div className='swiper-root'>
         <Carousel />
       </div>

@@ -1,6 +1,7 @@
 // src/pages/AccountingServices.jsx
 import React from 'react';
-import { FaBook } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { FaCalculator } from 'react-icons/fa';
 import accountingServicesIllustration from '../images/accounting.png';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,6 +12,11 @@ const AccountingServices = () => {
     };
   return (
     <div className="container mx-auto px-6 py-12">
+        <Helmet>
+          <title>Accounting Services | Lotus Accounting Services</title>
+          <meta name="description" content="General ledger, bank reconciliation, financial statements, payslip processing, and superannuation compliance." />
+          <link rel="canonical" href="https://lotusaccounting.com.au/accountingservices" />
+        </Helmet>
         <button 
             onClick={goBack}
             className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">
@@ -22,7 +28,7 @@ const AccountingServices = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaBook className="text-[#C41E3A] mr-2" />
+            <FaCalculator className="text-[#C41E3A] mr-2" />
             Accounting Services
           </h2>
           <p className="text-gray-600 mb-6">

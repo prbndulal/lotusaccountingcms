@@ -1,6 +1,7 @@
 // src/pages/GSTFiling.jsx
 import React from 'react';
-import { FaFileInvoiceDollar } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { FaFileInvoice } from 'react-icons/fa';
 import gstIllustration from '../images/taxillustration.png'; // Add a relevant illustration here
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 
@@ -11,7 +12,11 @@ const GSTFiling = () => {
     }
   return (
     <div className="container mx-auto px-6 py-12">
-        {/* Back Button */}
+        <Helmet>
+          <title>GST Filing | Lotus Accounting Services</title>
+          <meta name="description" content="Accurate GST return preparation, BAS lodgement, and compliance services for Australian businesses." />
+          <link rel="canonical" href="https://lotusaccounting.com.au/gstfiling" />
+        </Helmet>
         <button
             onClick={goBack}
             className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">
@@ -23,7 +28,7 @@ const GSTFiling = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaFileInvoiceDollar className="text-[#C41E3A] mr-2" />
+            <FaFileInvoice className="text-[#C41E3A] mr-2" />
             GST Filing
           </h2>
           <p className="text-gray-600 mb-6">

@@ -1,5 +1,6 @@
 // src/pages/PayrollManagement.jsx
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { FaMoneyBillWave } from 'react-icons/fa';
 import payrollManagementIllustration from '../images/payroll.png';
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
@@ -15,7 +16,11 @@ const PayrollManagement = () => {
 
   return (
     <div className="container mx-auto px-6 py-12">
-        {/* Back Button */}
+        <Helmet>
+          <title>Payroll Management | Lotus Accounting Services</title>
+          <meta name="description" content="PAYG withholding, superannuation, leave entitlements, award wage advice, and payment summaries for your staff." />
+          <link rel="canonical" href="https://lotusaccounting.com.au/payrollmanagement" />
+        </Helmet>
       <button
         onClick={goBack}
         className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300"

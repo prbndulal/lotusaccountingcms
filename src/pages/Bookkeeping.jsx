@@ -1,6 +1,7 @@
 // src/pages/Bookkeeping.jsx
 import React from 'react';
-import { FaBook } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
+import { FaBookOpen } from 'react-icons/fa';
 import bookkeepingIllustration from '../images/bookkeeping.png'; // Add a relevant illustration here
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 
@@ -11,7 +12,11 @@ const Bookkeeping = () => {
     };
   return (
     <div className="container mx-auto px-6 py-12">
-        {/* Back Button */}
+        <Helmet>
+          <title>Bookkeeping | Lotus Accounting Services</title>
+          <meta name="description" content="Professional bookkeeping services — payments, receipts, bank reconciliation, and financial reporting for your business." />
+          <link rel="canonical" href="https://lotusaccounting.com.au/bookkeeping" />
+        </Helmet>
         <button
             onClick={goBack}
             className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300">
@@ -24,7 +29,7 @@ const Bookkeeping = () => {
         </div>
         <div className="md:w-1/2 md:pl-10">
           <h2 className="text-3xl text-gray-800 font-bold mb-4 flex items-center">
-            <FaBook className="text-[#C41E3A] mr-2" />
+            <FaBookOpen className="text-[#C41E3A] mr-2" />
             Bookkeeping
           </h2>
           <p className="text-gray-600 mb-6">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -32,6 +33,7 @@ function App() {
 
 
   return (
+    <HelmetProvider>
     <Router>
       <ScrollToTop />
       {/* <div className="hamburger" onClick={toggleMenu}>
@@ -73,6 +75,7 @@ function App() {
       </div>
       
     </Router>
+    </HelmetProvider>
   );
 }
 export default App;

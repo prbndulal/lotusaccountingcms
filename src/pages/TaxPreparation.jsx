@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { FaFileInvoiceDollar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import taxIllustration from '../images/taxillustration.png'; // Add a relevant illustration here
@@ -12,7 +13,11 @@ const TaxPreparation = () => {
 
   return (
     <div className="container mx-auto px-6 py-12">
-      {/* Back Button */}
+      <Helmet>
+        <title>Tax Preparation | Lotus Accounting Services</title>
+        <meta name="description" content="Individual, company, trust, and partnership tax returns. Expert tax preparation ensuring compliance and maximum legitimate refund." />
+        <link rel="canonical" href="https://lotusaccounting.com.au/taxpreparation" />
+      </Helmet>
       <button
         onClick={goBack}
         className="mb-6 bg-[#C41E3A] text-white py-2 px-4 rounded hover:bg-[#9B1B30] transition-colors duration-300"
