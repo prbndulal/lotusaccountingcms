@@ -30,8 +30,9 @@
 }
 
 .logo img {
-  height: 10vh;
-  width: 10vw;
+  height: auto;
+  max-height: 70px;
+  width: auto;
 }
 
 /* Navbar and navigation links */
@@ -159,11 +160,25 @@
   }
 
   .logo img {
-    height: 10vh;
-    width: 30vw;
+    max-height: 55px;
+    width: auto;
   }
 
   .main-header {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 8px 12px;
+  }
+
+  .contact-info {
+    font-size: 12px;
+  }
+
+  .logo img {
+    max-height: 45px;
   }
 }

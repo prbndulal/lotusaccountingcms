@@ -15,7 +15,7 @@ const AboutUs = () => {
       </Helmet>
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6 md:flex md:items-center">
-          <div className="md:w-1/2 md-80">
+          <div className="md:w-1/2 ">
             <img src={aboutUsImage} alt="About Us" className="w-full h-auto object-cover mix-blend-multiply" />
           </div>
           <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
@@ -63,7 +63,7 @@ const AboutUs = () => {
               </li>
             </ul>
           </div>
-          <div className="md:w-1/2 md-80">
+          <div className="md:w-1/2 ">
             <img src={offerImage} alt="Why Choose Us" className="w-full h-auto object-cover" />
           </div>
         </div>

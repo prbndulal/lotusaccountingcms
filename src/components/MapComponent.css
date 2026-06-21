@@ -1,42 +1,25 @@
-/* src/components/MapComponent.css */
 .map-container {
   padding: 10px;
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 350px;
   }
-  
-  .map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+
+@media (max-width: 480px) {
+  .map-container {
+    height: 250px;
+    padding: 5px;
   }
-  
-  @media (max-width: 768px) {
-    .map-container {
-      height: 300px; /* Adjust height for small screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .map-container {
-      height: 200px; /* Adjust height for extra small screens */
-    }
-  }
-  
-  /* Force "View larger map" to be visible on small screens */
-  .map-container iframe {
-    pointer-events: auto;
-  }
-  
-  @media (max-width: 768px) {
-    .map-container {
-        height: 500px; /* Adjust height for extra small screens */
-      }
-    .map-container iframe {
-      transform: translateY(-50px); /* Adjust this value to center the pin vertically */
-       
-    }
-   
-  }
-  
+}

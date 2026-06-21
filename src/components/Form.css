@@ -47,7 +47,7 @@ body {
   display: block;
   width: 100%; /* Makes button full-width on small screens */
   padding: 10px;
-  background-color: #007bff;
+  background-color: #2E7D32;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -58,7 +58,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #0056b3; /* Darkens the button color on hover */
+  background-color: #1B5E20; /* Darkens the button color on hover */
 }
 
 /* Responsive styles */

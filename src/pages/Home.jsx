@@ -101,7 +101,7 @@ function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
             Industries We Serve
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
             {industries.map((industry, index) => (
               <div
                 key={index}
@@ -122,18 +122,18 @@ function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
             Our Accreditations & Partners
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-16">
             <div className="flex flex-col items-center">
-              <img src={tpbLogo} alt="Tax Practitioners Board - Registered Tax Agent 25996964" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <img src={tpbLogo} alt="Tax Practitioners Board - Registered Tax Agent 25996964" className="h-16 sm:h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
             <div className="flex flex-col items-center">
-              <img src={ipaLogo} alt="Institute of Public Accountants" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <img src={ipaLogo} alt="Institute of Public Accountants" className="h-16 sm:h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
             <div className="flex flex-col items-center">
-              <img src={xeroLogo} alt="Xero Certified Partner" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <img src={xeroLogo} alt="Xero Certified Partner" className="h-16 sm:h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
             <div className="flex flex-col items-center">
-              <img src={asicLogo} alt="ASIC Registered Agent" className="h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <img src={asicLogo} alt="ASIC Registered Agent" className="h-16 sm:h-20 md:h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
           </div>
         </div>
