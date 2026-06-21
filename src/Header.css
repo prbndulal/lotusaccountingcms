@@ -1,14 +1,14 @@
-/* Padding adjustment when menu is open */
-body.menu-open .body-content {
-  padding-top: 50px; /* Adjust based on the height of the nav menu */
-}
-
 /* Top bar styles */
 .top-bar {
   background-color: #1E1E1E;
-  padding: 15px 25px;
+  padding: 10px 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-right {
+  display: flex;
   align-items: center;
 }
 
@@ -19,20 +19,14 @@ body.menu-open .body-content {
   color: #ffffff;
 }
 
-.social-icons a {
-  color: #6D6D6D;
-  margin-left: 15px;
-  font-size: 16px;
-}
-
 /* Main header styles */
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px 20px; */
   background-color: #ffffff;
   position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .logo img {
@@ -52,12 +46,15 @@ body.menu-open .body-content {
   list-style: none;
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
 .nav-links li a:hover,
@@ -65,7 +62,26 @@ body.menu-open .body-content {
   color: #C41E3A;
 }
 
- /* Hamburger icon */
+/* Book Appointment CTA button */
+.book-btn {
+  background-color: #2E7D32 !important;
+  color: #fff !important;
+  padding: 10px 22px !important;
+  border-radius: 4px;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  transition: all 0.3s ease !important;
+  white-space: nowrap;
+}
+
+.book-btn:hover {
+  background-color: #1B5E20 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+/* Hamburger icon */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -90,7 +106,7 @@ body.menu-open .body-content {
 }
 
 .hamburger.open .line:nth-child(2) {
-  opacity: 0; /* Hide the middle line */
+  opacity: 0;
 }
 
 .hamburger.open .line:nth-child(3) {
@@ -102,14 +118,9 @@ body.menu-open .body-content {
   .hamburger {
     display: flex;
   }
-}
 
- 
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  body.menu-open .body-content {
-    padding-top: 50px; /* Adjust based on the height of the menu */
+  .social-icons-top {
+    display: none !important;
   }
 
   .navbar {
@@ -131,20 +142,28 @@ body.menu-open .body-content {
   }
 
   .nav-links.open {
-    max-height: 300px;
+    max-height: 400px;
     padding-top: 15px;
+    padding-bottom: 15px;
   }
 
- 
-  .hamburger {
-    display: flex;
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .book-btn {
+    display: inline-block;
+    width: auto;
   }
 
   .logo img {
     height: 10vh;
     width: 30vw;
   }
-  .main-header{
+
+  .main-header {
     flex-direction: column;
   }
 }

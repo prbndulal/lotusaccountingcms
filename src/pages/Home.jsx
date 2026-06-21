@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 import {
   FaRocket, FaUserTie, FaHome, FaConciergeBell, FaHardHat,
   FaHospital, FaGraduationCap, FaChild, FaLaptopCode,
-  FaUtensils, FaPlane, FaCut, FaDumbbell, FaTree
+  FaUtensils, FaPlane, FaCut, FaDumbbell, FaTree,
+  FaAward, FaShieldAlt, FaHandshake
 } from 'react-icons/fa';
 import tpbLogo from '../images/taxpractitioner.png';
 import ipaLogo from '../images/ipa.png';
@@ -37,6 +38,34 @@ function Home() {
       <div className='swiper-root'>
         <Carousel />
       </div>
+
+      <section className="py-14 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center text-center p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center mb-4">
+                <FaAward className="text-3xl text-[#C41E3A]" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Experienced</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Over a decade of expertise in accounting, taxation, and business solutions for individuals and businesses.</p>
+            </div>
+            <div className="flex flex-col items-center text-center p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center mb-4">
+                <FaShieldAlt className="text-3xl text-[#C41E3A]" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Trusted Since 2019</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Trusted by individuals and businesses across Australia with a proven track record of delivering results.</p>
+            </div>
+            <div className="flex flex-col items-center text-center p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center mb-4">
+                <FaHandshake className="text-3xl text-[#C41E3A]" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Professional Service</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Dedicated client management with transparent, competitive pricing and no hidden charges.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <AboutUs />
       <ServiceCards />

@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../src/AboutUs.css';
-import aboutUsImage from '../aboutus.png'; // Adjust the path according to your project structure
+import aboutUsImage from '../aboutus.png';
 import offerImage from '../offer.png';
 
 const AboutUs = () => {
@@ -23,6 +24,12 @@ const AboutUs = () => {
             <p className="text-gray-500 text-sm italic mb-6">
               Liability limited by a scheme approved under Professional Standards Legislation.
             </p>
+            <Link
+              to="/aboutus"
+              className="inline-block bg-[#C41E3A] text-white font-semibold py-3 px-6 rounded hover:bg-[#9B1B30] transition-colors duration-300"
+            >
+              Learn More About Us
+            </Link>
           </div>
         </div>
       </section>
