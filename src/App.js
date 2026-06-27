@@ -17,6 +17,8 @@ import InvestmentAdvisory from './pages/InvestmentAdvisory';
 import PayrollManagement from './pages/PayrollManagement';
 import GSTFiling from './pages/GSTFiling';
 import SMSF from './pages/SMSF';
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop'; 
 
 
@@ -68,6 +70,8 @@ function App() {
         <Route path="/investmentadvisory" element={<InvestmentAdvisory />} />
         <Route path="/payrollmanagement" element={<PayrollManagement />} />
         <Route path="/smsf" element={<SMSF />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
       </Routes>
         </main>

@@ -53,7 +53,7 @@ function Home() {
                 <FaAward className="text-3xl text-[#C41E3A]" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Experienced</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Over a decade of expertise in accounting, taxation, and business solutions for individuals and businesses.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Over 7 years of expertise in accounting, taxation, and business solutions for individuals and businesses.</p>
             </div>
             <div className="flex flex-col items-center text-center p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-300">
               <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center mb-4">
@@ -83,7 +83,7 @@ function Home() {
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             We assist our clients with comprehensive business support, providing tailored advice and
-            consultations to meet their unique needs. With extensive experience working with both
+            consultations to meet their unique needs. With over 7 years of experience working with both
             individuals and businesses, we ensure that our clients receive personalized guidance and
             strategies that drive growth and success.
           </p>

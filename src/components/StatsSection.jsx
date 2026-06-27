@@ -11,7 +11,7 @@ const StatsSection = () => {
           <div className="text-center">
             <FaClock className="text-4xl text-[#C41E3A] mx-auto mb-4" />
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-2">
-              <CountUp end={10} duration={2} />+
+              <CountUp end={7} duration={2} />+
             </h3>
             <p className="text-gray-400 font-medium">Years of Experience</p>
           </div>

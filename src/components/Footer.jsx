@@ -83,9 +83,19 @@ const Footer = () => {
             <p className="text-gray-500 text-xs text-center">
               Liability limited by a scheme approved under Professional Standards Legislation.
             </p>
-            <a href="https://storyset.com/people" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-300 text-xs">
-              Illustrations by Storyset
-            </a>
+            <div className="flex items-center gap-4">
+              <Link to="/terms-of-service" className="text-gray-500 hover:text-gray-300 text-xs">
+                Terms of Service
+              </Link>
+              <span className="text-gray-600 text-xs">|</span>
+              <Link to="/privacy-policy" className="text-gray-500 hover:text-gray-300 text-xs">
+                Privacy Policy
+              </Link>
+              <span className="text-gray-600 text-xs">|</span>
+              <a href="https://storyset.com/people" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-300 text-xs">
+                Illustrations by Storyset
+              </a>
+            </div>
           </div>
         </div>
       </div>

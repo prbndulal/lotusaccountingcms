@@ -21,8 +21,8 @@ const AboutUs = () => {
           <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
             <h2 className="text-3xl text-gray-800 mb-4">About Us</h2>
             <p className="text-gray-600 mb-6">
-              Lotus Accounting Services, a Public Practice firm founded in the early 21st century, has
-              experienced continuous growth for over a decade. Our primary focus is on delivering
+              Lotus Accounting Services, a Public Practice firm established in 2019, has
+              experienced continuous growth since its inception. Our primary focus is on delivering
               exceptional accounting, taxation, and business solutions to our valued clients. Our reputation
               has been built on the foundation of ethical accounting and business consulting, all offered at
               competitive rates.
