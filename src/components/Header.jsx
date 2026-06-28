@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Header.css';
 import logo from '../logo.png';
 import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,11 +48,8 @@ function Header() {
         </div>
         <div className="top-bar-right">
           <div className="social-icons-top flex items-center gap-3 mr-4">
-            <a href="/#" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+            <a href="https://www.facebook.com/lotusaccountingaus" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
               <FaFacebook className="w-4 h-4" />
-            </a>
-            <a href="/#" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-              <FaLinkedin className="w-4 h-4" />
             </a>
           </div>
           <div

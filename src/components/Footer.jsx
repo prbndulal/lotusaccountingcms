@@ -1,4 +1,4 @@
-import { FaLinkedin, FaFacebook, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import { FaFacebook, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -13,11 +13,8 @@ const Footer = () => {
               A Public Practice firm delivering exceptional accounting, taxation, and business solutions with ethical standards and competitive rates.
             </p>
             <div className="flex space-x-4">
-              <a href="/#" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#C41E3A] transition-colors duration-300">
+              <a href="https://www.facebook.com/lotusaccountingaus" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#C41E3A] transition-colors duration-300">
                 <FaFacebook className="text-sm" />
-              </a>
-              <a href="/#" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#C41E3A] transition-colors duration-300">
-                <FaLinkedin className="text-sm" />
               </a>
             </div>
           </div>
@@ -85,7 +82,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <Link to="/terms-of-service" className="text-gray-500 hover:text-gray-300 text-xs">
-                Terms of Service
+                Terms of Use
               </Link>
               <span className="text-gray-600 text-xs">|</span>
               <Link to="/privacy-policy" className="text-gray-500 hover:text-gray-300 text-xs">
