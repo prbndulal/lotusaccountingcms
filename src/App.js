@@ -12,7 +12,6 @@ import TaxPreparation from './pages/TaxPreparation';
 import AccountingServices from './pages/AccountingServices';
 import Bookkeeping from './pages/Bookkeeping';
 import BusinessAdvisory from './pages/BusinessAdvisory';
-import FinancialPlanning from './pages/FinancialPlanning';
 import InvestmentAdvisory from './pages/InvestmentAdvisory';
 import PayrollManagement from './pages/PayrollManagement';
 import GSTFiling from './pages/GSTFiling';
@@ -65,7 +64,6 @@ function App() {
         <Route path="/accountingservices" element={<AccountingServices />} />
         <Route path="/bookkeeping" element={<Bookkeeping />} />
         <Route path="/businessadvisory" element={<BusinessAdvisory />} />
-        <Route path="/financialplanning" element={<FinancialPlanning />} />
         <Route path="/gstfiling" element={<GSTFiling />} />
         <Route path="/investmentadvisory" element={<InvestmentAdvisory />} />
         <Route path="/payrollmanagement" element={<PayrollManagement />} />

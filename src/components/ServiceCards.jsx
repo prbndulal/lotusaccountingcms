@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFileInvoiceDollar, FaBriefcase, FaCalculator, FaMoneyBillWave, FaFileInvoice, FaChartLine, FaBookOpen, FaBuilding, FaPiggyBank } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaBriefcase, FaCalculator, FaMoneyBillWave, FaFileInvoice, FaBookOpen, FaBuilding, FaPiggyBank } from 'react-icons/fa';
 import taxImg from '../images/taxillustration.png';
 import accountingImg from '../images/accounting.png';
 import bookkeepingImg from '../images/bookkeeping.png';
@@ -44,13 +44,6 @@ function ServiceCards() {
       icon: <FaFileInvoice />,
       image: taxImg,
       link: '/gstfiling'
-    },
-    {
-      title: 'Financial Planning',
-      description: 'Strategic financial planning services to secure your financial future.',
-      icon: <FaChartLine />,
-      image: businessImg,
-      link: '/financialplanning'
     },
     {
       title: 'Bookkeeping',
